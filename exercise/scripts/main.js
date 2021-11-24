@@ -50,10 +50,12 @@ window.addEventListener('DOMContentLoaded', function() {
   // - #green
   // - #orange
   // - #red
-  var deckElement = document.querySelector('.Cards');
-  var deckColor = window.location.hashh;
+  var deckElement = document.querySelector('.cards');
+  debugger;
+  var deckColor = window.location.search.substr(1);
 
   if (deckElement && deckColor) {
+    debugger;
     var className = 'cards--' + deckColor;
     deckElement.classList.add(className);
   }
